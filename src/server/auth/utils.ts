@@ -17,6 +17,7 @@ import { IUser } from '@/server/db/types';
 export async function getCurrentUser(): Promise<IUser | null> {
   try {
     const session = await getServerSession(authOptions);
+    console.log('****************session****************', session);
 
     if (!session?.user?.id) {
       return null;
@@ -69,7 +70,7 @@ export async function requireAdmin(): Promise<IUser> {
  * Use this in client components with useSession hook
  */
 export async function getSession() {
-  return await getServerSession(authOptions);
+  return getServerSession(authOptions);
 }
 
 /**

@@ -54,5 +54,41 @@
     "fileSelected": "File selected",
     "invalidFileType": "Invalid file type",
     "fileTooLarge": "File size exceeds limit"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}",
+    "subtitle": "Manage your restaurants and digital menus",
+    "stats": {
+      "restaurants": "Restaurants",
+      "totalMenus": "Total Menus",
+      "activeMenus": "Active Menus",
+      "draftMenus": "Draft Menus"
+    },
+    "sections": {
+      "restaurants": "Your Restaurants",
+      "recentMenus": "Recent Menus"
+    },
+    "actions": {
+      "createRestaurant": "Create Restaurant",
+      "createFirstRestaurant": "Create Your First Restaurant",
+      "manage": "Manage",
+      "addMenu": "Add Menu",
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "menuStatus": {
+      "published": "Published",
+      "draft": "Draft",
+      "archived": "Archived"
+    },
+    "empty": {
+      "restaurants": "You haven't created any restaurants yet. Get started by creating your first restaurant!",
+      "menus": "No menus found. Create your first menu to get started."
+    }
   }
 }

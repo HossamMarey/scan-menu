@@ -10,6 +10,7 @@ import {
 } from '@/lib/localization';
 import { Geist, Geist_Mono, Alexandria } from 'next/font/google';
 import { Providers } from '@/components/providers';
+import { getSession } from "@/server/auth/utils";
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -54,9 +55,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   const direction = getDirection(locale as ILocaleCode);
 
   // Prepare font classes to ensure consistency
-  const fontClasses = `${geistSans.variable} ${geistMono.variable} ${
-    locale === 'ar' ? arFont.className : ''
-  }`.trim();
+  const fontClasses = `${geistSans.variable} ${geistMono.variable} ${locale === 'ar' ? arFont.className : ''
+    }`.trim();
+
+
 
   return (
     <html
@@ -66,7 +68,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       suppressHydrationWarning
     >
       <body className="antialiased" suppressHydrationWarning>
-        <Providers>
+        <Providers >
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>

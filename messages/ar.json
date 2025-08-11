@@ -54,5 +54,41 @@
     "fileSelected": "تم اختيار الملف",
     "invalidFileType": "نوع ملف غير صالح",
     "fileTooLarge": "حجم الملف يتجاوز الحد المسموح"
+  },
+  "dashboard": {
+    "welcome": "مرحبًا بعودتك، {name}",
+    "subtitle": "أدر مطاعمك وقوائم الطعام الرقمية",
+    "stats": {
+      "restaurants": "المطاعم",
+      "totalMenus": "إجمالي القوائم",
+      "activeMenus": "القوائم النشطة",
+      "draftMenus": "المسودات"
+    },
+    "sections": {
+      "restaurants": "مطاعمك",
+      "recentMenus": "القوائم الحديثة"
+    },
+    "actions": {
+      "createRestaurant": "إنشاء مطعم",
+      "createFirstRestaurant": "إنشاء مطعمك الأول",
+      "manage": "إدارة",
+      "addMenu": "إضافة قائمة",
+      "view": "عرض",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "menuStatus": {
+      "published": "منشور",
+      "draft": "مسودة",
+      "archived": "مؤرشف"
+    },
+    "empty": {
+      "restaurants": "لم تقم بإنشاء أي مطاعم بعد. ابدأ بإنشاء مطعمك الأول!",
+      "menus": "لا توجد قوائم. أنشئ قائمتك الأولى للبدء."
+    }
   }
 }

@@ -3,6 +3,7 @@
 import { ThemeProvider } from './theme-provider';
 import { ToastProvider } from './toast-provider';
 import { AuthSessionProvider } from './session-provider';
+import { SessionProviderProps } from "next-auth/react";
 
 /**
  * Global providers wrapper that combines all app-level providers
@@ -10,11 +11,14 @@ import { AuthSessionProvider } from './session-provider';
  */
 interface ProvidersProps {
   children: React.ReactNode;
+
 }
 
 export function Providers({ children }: ProvidersProps) {
+
+
   return (
-    <AuthSessionProvider>
+    <AuthSessionProvider >
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
