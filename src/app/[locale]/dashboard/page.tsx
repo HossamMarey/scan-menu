@@ -14,12 +14,12 @@ import { CreateRestaurantButton } from '@/components/dashboard/create-restaurant
 export default async function DashboardPage() {
   try {
     // Check authentication
+    await connectToDatabase();
     const user = await getCurrentUser();
     if (!user) {
       redirect('/auth/signin');
     }
 
-    await connectToDatabase();
 
     // Get user's restaurants and menus
     const restaurants = await Restaurant.find({ ownerId: user._id })
@@ -57,7 +57,7 @@ export default async function DashboardPage() {
           </div>
 
           {/* Dashboard Overview */}
-          <DashboardOverview 
+          <DashboardOverview
             restaurants={restaurants}
             menus={menus}
             user={user}
@@ -68,7 +68,7 @@ export default async function DashboardPage() {
 
   } catch (error) {
     console.error('❌ Dashboard error:', error);
-    
+
     // If there's an error (like DB connection), redirect to debug page
     redirect('/dashboard/debug');
   }
