@@ -1,0 +1,44 @@
+{
+  "Common": {
+    "home": {
+      "welcome": "Welcome to ScanMenu",
+      "description": "Start by creating your restaurant and uploading your first menu.",
+      "getStarted": "Get Started"
+    },
+    "navigation": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "restaurants": "Restaurants",
+      "menus": "Menus",
+      "analytics": "Analytics"
+    },
+    "ui": {
+      "loading": "Loading...",
+      "error": "Something went wrong",
+      "retry": "Try again",
+      "cancel": "Cancel",
+      "save": "Save",
+      "delete": "Delete",
+      "edit": "Edit",
+      "create": "Create"
+    }
+  },
+  "auth": {
+    "loading": "Loading...",
+    "signInWithGoogle": "Sign in with Google",
+    "signOut": "Sign out",
+    "welcomeBack": "Welcome back, {name}",
+    "signInTitle": "Sign in to ScanMenu",
+    "signInDescription": "Access your restaurant dashboard and manage your digital menus",
+    "termsAgreement": "By signing in, you agree to our Terms of Service and Privacy Policy",
+    "authenticationError": "Authentication Error",
+    "tryAgain": "Try Again",
+    "backToHome": "Back to Home",
+    "errors": {
+      "configuration": "There was a problem with the server configuration. Please try again later.",
+      "accessDenied": "Access denied. You do not have permission to sign in.",
+      "verification": "The verification link was invalid or has expired.",
+      "default": "An unexpected error occurred during authentication. Please try again."
+    }
+  }
+}
