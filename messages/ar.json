@@ -40,5 +40,19 @@
       "verification": "رابط التحقق غير صالح أو منتهي الصلاحية.",
       "default": "حدث خطأ غير متوقع أثناء المصادقة. يرجى المحاولة مرة أخرى."
     }
+  },
+  "uploads": {
+    "maxSize": "الحد الأقصى: {size} ميجابايت",
+    "allowedTypes": "المسموح: {types}",
+    "upload": "رفع",
+    "uploading": "جاري الرفع...",
+    "cancel": "إلغاء",
+    "uploadComplete": "تم الرفع بنجاح",
+    "uploadFailed": "فشل في الرفع",
+    "selectFile": "اختر ملف",
+    "dragAndDrop": "اسحب وأفلت الملفات هنا، أو انقر للاختيار",
+    "fileSelected": "تم اختيار الملف",
+    "invalidFileType": "نوع ملف غير صالح",
+    "fileTooLarge": "حجم الملف يتجاوز الحد المسموح"
   }
 }

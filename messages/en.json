@@ -40,5 +40,19 @@
       "verification": "The verification link was invalid or has expired.",
       "default": "An unexpected error occurred during authentication. Please try again."
     }
+  },
+  "uploads": {
+    "maxSize": "Max size: {size}MB",
+    "allowedTypes": "Allowed: {types}",
+    "upload": "Upload",
+    "uploading": "Uploading...",
+    "cancel": "Cancel",
+    "uploadComplete": "Upload completed successfully",
+    "uploadFailed": "Upload failed",
+    "selectFile": "Select file",
+    "dragAndDrop": "Drag and drop files here, or click to select",
+    "fileSelected": "File selected",
+    "invalidFileType": "Invalid file type",
+    "fileTooLarge": "File size exceeds limit"
   }
 }

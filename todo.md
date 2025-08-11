@@ -63,30 +63,38 @@ Acceptance
 
 ---
 
-## Phase 3 — Authentication (Google OAuth)
+## Phase 3 — Authentication (Google OAuth) ✅
 
-- [ ] next-auth with Google provider (App Router handlers)
-- [ ] Session strategy JWT; link to `User` document on sign-in
-- [ ] Protected routes helper `withAuth()` and `getCurrentUser()`
-- [ ] Onboarding: if first login, create `User` and prompt to create first Restaurant
+- [x] next-auth with Google provider (App Router handlers)
+- [x] Session strategy JWT; link to `User` document on sign-in
+- [x] Protected routes helper `getCurrentUser()`, `requireAuth()`, `requireAdmin()`
+- [x] Onboarding: if first login, create `User` automatically
+- [x] Auth UI components (SignInButton, sign-in/error pages)
+- [x] Localization for auth messages (EN/AR)
+- [x] Session provider integration with global providers
+- [x] TypeScript definitions for NextAuth
+- [x] Environment variables documentation
 
 Acceptance
 
-- [ ] Login with Google works; session available in server/components
+- [x] Login with Google works; session available in server/components
 
 ---
 
-## Phase 4 — Storage (AWS S3)
+## Phase 4 — Storage (AWS S3) ✅
 
-- [ ] S3 client in `@/server/s3/client.ts`
-- [ ] Presigned POST/PUT for uploads (PDF, images)
-- [ ] Validation: PDF max 20MB, allowed mime types
-- [ ] next/image remotePatterns for S3 bucket
-- [ ] Bucket CORS + minimal IAM permissions
+- [x] S3 client in `@/server/s3/client.ts`
+- [x] Presigned POST/PUT for uploads (PDF, images)
+- [x] Validation: PDF max 20MB, allowed mime types
+- [x] next/image remotePatterns for S3 bucket
+- [x] Bucket CORS + minimal IAM permissions
+- [x] API routes for presigned upload and completion
+- [x] Client upload utilities and React upload component
+- [x] Localization/messages for uploads (EN/AR)
 
 Acceptance
 
-- [ ] Uploads succeed from create menu form; stored with predictable keys
+- [x] Uploads succeed from create menu form; stored with predictable keys
 
 ---
 
